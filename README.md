@@ -34,7 +34,7 @@ navigator.serviceWorker.register('/sw.js').then(function(reg) {
   console.log('Two');
 });
 ``` 
-Service worker specifies URLS one "slash" deep, like so (an example using scope):<br>
+Service worker will control any page URL that begins with a specified scope by default. SW specifies URLS one "slash" deep, like so (an example using scope):<br>
 ```js
 navigator.serviceWorker.register('/sw.js', {scope: '/foo/'});
 // will apply to URLs deeper than foo, but not foo
