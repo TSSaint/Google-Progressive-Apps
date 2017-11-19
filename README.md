@@ -25,7 +25,7 @@ Some offline-first strategies:
 ## Service Worker
 Service worker is a software (usually Javascript) and a relatively new browser feature that "sits" between the device/page, invisible to the user/can't acess the DOM, and intercepts requests as the browser makes them. One way to use this is to store the page activity in a cache while waiting for the network to return information.
 <br>
-This is one way to call Service Worker:<br>
+This is just of the few ways to call Service Worker:<br>
 ```js
 // Need an understanding of JS Promises to utilize
 navigator.serviceWorker.register('/sw.js').then(function(reg) {
